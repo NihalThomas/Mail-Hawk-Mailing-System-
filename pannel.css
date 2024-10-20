@@ -1,0 +1,345 @@
+/* General reset and background */
+body {
+    background: url(images/5655049.jpg);
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Allow content to be stacked vertically */
+    justify-content: flex-start; /* Start content from the top */
+    overflow: hidden; /* Prevent scrollbars */
+    background-size: cover; /* Ensures the image covers the full body */
+    background-position: center; /* Center the image */
+}
+
+
+/* Title Section */
+
+.title-section {
+    height: 60px;
+    background-color: #343434;
+}
+
+
+.title {
+    color: white; /* Title color */
+    font-size: 20px; /* Title font size */
+    font-family: 'Audiowide', sans-serif; /* Title font family */
+    position: relative;
+    left: 80px;
+}
+
+.subtitle {
+    color: white; /* Subtitle color */
+    font-size: 20px; /* Subtitle font size */
+    font-family: 'Italianno', cursive; /* Subtitle font family *//* Space between title and subtitle */
+    position: relative;
+    left: 180px;
+}
+
+.main_area {
+    height: 65%;
+    width: 70%;
+    left: 85px;
+    position: absolute;
+    background-color: none;
+    opacity: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex; /* Use Flexbox for layout */
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    bottom: 20px;
+}
+
+.email-section,
+.preview-section {
+    flex: 1; /* Equal width for both sections */
+    padding: 20px; /* Padding inside each section */
+}
+
+
+.email-label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.email_box {
+    width: 90%; /* Reduced width to avoid touching the divider */
+    height: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    resize: none;
+    border-color: black;
+}
+
+.email_body {
+    height: 230px;
+    font-size: normal;
+    border: 1px solid #000000;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.preview-button-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 120px;
+    /*border: 1px solid black; /* Added border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.preview-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.preview-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect for buttons */
+}
+
+.send-button {
+    background-color: #3364ff;
+    color: aliceblue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #555555;
+}
+
+/* Side panel */
+.panel {
+    width: 60px;
+    height: 92.3%;
+    background-color: #ffffff;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home_button,
+.history {
+    background-color: inherit;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.home_button img,
+.history img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%) brightness(0%) contrast(100%);
+}
+
+.home_button:hover,
+.history:hover {
+    background-color: rgb(204, 204, 204);
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.profile img{
+    width: 30px;
+    height: 30px;
+}
+
+.profile {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.signature {
+    border-radius: 20px;
+    background-color: #343434;
+    color: white;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    box-shadow: white;
+}
+
+.parent-container {
+    position: relative; /* Ensure child is positioned relative to this container */
+    height: 400px;      /* Set a height for proper positioning context */
+    left: 100px;
+    height: 200px;
+}
+
+.title-main {
+    color: #3c3c3c;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+}
+
+.title-personalized{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #777777;
+}
+
+/* Circular Button */
+.circular-button {
+    width: 30px;              /* Set the button's width */
+    height: 30px;             /* Set the button's height */
+    border-radius: 50%;       /* Make the button circular */
+    border: 3px solid black;  /* Set the border color to black */
+    background-color: none;  /* Set the background color to black */
+    padding: 0;               /* Remove padding inside the button */
+    overflow: hidden;         /* Ensure the image fits inside the button */
+    cursor: pointer;          /* Make it look clickable */
+    display: flex;            /* Center the image inside the button */
+    justify-content: center;  /* Horizontally center the image */
+    align-items: center;      /* Vertically center the image */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Hover effect transition */
+}
+
+.circular-button img {
+    width: 20px;              /* Make the image fill the button */
+    height: 20px;             /* Keep the aspect ratio consistent */
+    object-fit: cover;        /* Ensure the image covers the entire button area */
+    border-radius: 50%;       /* Ensure the image is circular */
+    filter: brightness(0);    /* Make the image black initially */
+    transition: filter 0.3s ease; /* Transition for smooth effect */
+}
+
+.circular-button:hover {
+    background-color: none; /* Change background color to specified color on hover */
+    border-color: #3498db;     /* Change border color to match the background on hover */
+}
+
+.circular-button:hover img {
+    filter: brightness(1);      /* Restore the original image color on hover */
+}
+
+/* Tooltip text */
+.tooltip {
+    visibility: hidden;         /* Hide the tooltip by default */
+    width: 120px;              /* Set tooltip width */
+    background-color: #000000;    /* Tooltip background color */
+    color: #ffffff;               /* Tooltip text color */
+    text-align: center;        /* Center text */
+    border-radius: 5px;       /* Rounded corners */
+    padding: 5px;             /* Padding */
+    position: absolute;        /* Position tooltip */
+    z-index: 1;               /* Ensure tooltip is above other elements */
+    bottom: 125%;              /* Position above the button */
+    left: 50%;                 /* Center horizontally */
+    margin-left: -60px;       /* Center adjustment */
+    opacity: 0;                /* Initial opacity */
+    transition: opacity 0.3s; /* Fade effect */
+}
+
+.circular-button:hover .tooltip {
+    visibility: visible;        /* Show tooltip on hover */
+    opacity: 1;                /* Fade in effect */
+}
+
+.toolbar {
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 60%;
+}
+
+.toolbar button, .toolbar select {
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.toolbar button {
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.toolbar button:hover {
+    background-color: #f0f0f0;
+}
+
+.email_body {
+    width: 100%;
+    height: 230px;
+    font-size: larger;
+    border: 1px solid #000000;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#linkInputModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it is on top of other elements */
+}
+
+#linkInputModal label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#linkInputModal input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.linkinput {
+    display: none;
+    background-color: white;
+}
