@@ -5,6 +5,16 @@ The **Desktop Application for Personalized Mailing System Automation** is a user
 
 Although OAuth authentication is in the application’s design, it is currently disabled due to the testing phase. The application allows easy customization with features like adding signatures, inserting images, adjusting text size, and more.
 
+## Application Images
+
+### Application Screenshot
+![Application Screenshot](./app.png)
+*Application interface.*
+
+### Output Screenshot
+![Output Screenshot](./mailoutput.png)
+final output of a personalized email.*
+
 ## Features
 - **Personalized Email Sending**: Send personalized emails by using placeholders (e.g., `{Name}`) and filling them with data from a CSV file.
 - **Email Templates**: Upload an email template with placeholders and automatically fill them using a CSV file.
@@ -52,15 +62,6 @@ Although OAuth authentication is in the application’s design, it is currently 
 
 4. **Sending the Email**: Once the email is ready, click the **Send** button (OAuth functionality is currently disabled for testing).
 
-## Application Images
-
-### Application Screenshot
-![Application Screenshot](./app.png)
-*Application interface.*
-
-### Output Screenshot
-![Output Screenshot](./mailoutput.png)
-final output of a personalized email.*
 
 ## Contributing
 
